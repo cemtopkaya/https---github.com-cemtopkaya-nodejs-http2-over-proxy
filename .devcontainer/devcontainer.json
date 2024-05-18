@@ -24,7 +24,8 @@
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
 	"workspaceFolder": "/workspace",
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "w2 run --uiport 891 --httpPort 777 --httpsPort 888 --socksPort 999",
+	"postCreateCommand": "/workspace/.devcontainer/postcreatecommand.sh",
+	// "postCreateCommand": "w2 run --uiport 891 --httpPort 777 --httpsPort 888 --socksPort 999",
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
