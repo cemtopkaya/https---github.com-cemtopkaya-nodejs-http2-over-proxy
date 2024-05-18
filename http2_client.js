@@ -56,21 +56,12 @@ req.end();
 (async () => {
   try {
     // Build a HTTP/1.1 CONNECT request for a tunnel:
-    const client = http2.connect('https://10.10.23.53:8207', {
-      createConnection: () => {
-        return new SocksProxyAgent({
-          protocol: 'socks5',
-          hostname: 'localhost',
-          port: 6000,
-          username: null,
-          password: null
-        })
-      }
-    });
+    const client = http2.connect('https://10.10.23.53:8207');
     
     client
       .on('error', (err) => console.error(err))
       .on('connect', (res, socket) => { 
+        console.log("Bağlantı sağlandı...");
         console.log(res);
         client.close();
       });
