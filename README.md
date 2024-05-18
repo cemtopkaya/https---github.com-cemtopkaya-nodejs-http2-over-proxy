@@ -1,5 +1,7 @@
 ## HTTP Sürümleri
 
+Tüm makaleyi [medium makalemde](https://topkaya.medium.com/nodejs-ile-socks-proxy-%C3%BCzerinden-http-istekleri-64c7d2c374f0) bulabilirsiniz.
+
 ![](https://i.stack.imgur.com/xE8FF.png)
 ```
 http/1.1 = HTTP/1.1
